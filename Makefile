@@ -34,8 +34,8 @@ docker-run:
 		-e TZ=$(TZ) \
 		-e PASSWORD=$(PASSWORD) \
 		-p $(HOST_PORT):8443 \
-		-v "$(CONFIG_DIR)":/config \
-		-v "$(WORKDIR)":/config/workspace \
+		-v "$(CONFIG_DIR)":/config:Z \
+		-v "$(WORKDIR)":/config/workspace:Z \
 		$(IMAGE_NAME)
 
 docker-build-run: docker-build docker-run
