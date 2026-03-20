@@ -3,7 +3,6 @@
 #include <string>
 
 
-
 std::string numero_primo(int n) {
     if(n == 2){
         return "primo";
@@ -19,10 +18,8 @@ std::string numero_primo(int n) {
         if(n % i == 0){
             return "no primo";
         }
-
         i = i + 2;
     }
-
     return "primo";
 }
 
