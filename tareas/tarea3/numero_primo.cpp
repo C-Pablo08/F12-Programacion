@@ -13,15 +13,13 @@ std::string numero_primo(int n) {
         return "no primo";
     }
 
-    int raiz = sqrt(n);
-
     int i = 3;
 
-    while(i <= raiz){
+    while(i <= sqrt(n)){
         if(n % i == 0){
             return "no primo";
         }
-        
+
         i = i + 2;
     }
 
